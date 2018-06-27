@@ -1,129 +1,109 @@
 .container {
   display: flex;
-  flex-direction: row;
-  width: 1170px;
+  width: 1232px;
   padding-top: 116px;
-  justify-content: space-around;
-  padding: 10px auto;
-  align-items: baseline;
+  margin: 0 auto 78px auto;
 }
 
-.left {
-  width: 630x;
-  margin: 0 15 0 15;
+.column {
   display: flex;
   flex-direction: column;
+  margin-right: 32px;
 }
 
-.lead {
+.column.large {
   width: 630px;
-  justify-content: center;
-}
-
-
-.mother {
+  flex-direction: row;
+  flex-wrap: wrap;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 300px;
-  margin-top: 15px;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  text-align: center;
-}
-
-.lead .mother {
-  display: inline-flex;
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
-}
-
-.mother span {
-    text-align: left;
-    padding-left: 15px;
-}
-
-.monument {
-  margin-top: 16px;
-}
-
-.storycontent {
-    width: 315px;
-    display: flex;
   }
 
-.smallerstories {
-    width: 315px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+.column.medium {
+  width: 300px;
 }
 
-.orca {
-  display: inline-block;
-  flex-flow: column;
-  width: 300px;
-  padding: 10px;
-  flex-direction: column;
-}
-
-.burger {
-  display: inline-block;
-  flex-flow: column;
-  flex-direction: column;
-  width: 300px;
-  padding: 10px;
-  justify-content: flex-start;
-}
-
-
-.left .story1 {
-  display: inline-flex;
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
-  width: 300px;
-  height: 300px;
-  margin-top: 0;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  text-align: center;
-  align-items: center;
-  color: white;
-  justify-content: flex-end;
-}
-
-
-.left .story2 {
-  display: inline-flex;
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png);
-  width: 300px;
-  height: 300px;
-  margin-top: 0;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  text-align: center;
-  align-items: center;
-  color: white;
-  justify-content: flex-end;
-}
-
-
-
-.container .middle {
-  width: 300px;
+.column.small {
   display: flex;
-}
-
-.column .right {
   width: 240px;
-  display: flex;
 }
 
+.news-bites {
+  display: inline-flex;
+  flex-flow: column;
+  flex-direction: column;
+}
 
+.titlebite {
+  font-size: 16px;
+ font-weight: bold;
+    text-align: center;
+}
 
+.bite {
+  display: flex;
+  border-bottom: 1px solid black;
+  background-color: WhiteSmoke;
+    font-family: Verdana;
+    font-size: 12px;
+    color: DimGray;
+}
 
+.image-content {
+display: flex;
+height: 300px;
+display: inline-block;
+font-family: Georgia;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.main.image-content {
+background-image: url(../images/img-story-main.png);
+display: flex;
+width: 630px;
+text-align: left;
+  font-size: 40px;
+}
+
+.story1.image-content {
+background-image: url(../images/img-story-2.png);
+display: flex;
+font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.story2.image-content {
+  display: flex;
+background-image: url(../images/img-story-3.png);
+font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.story3.image-content {
+background-image: url(../images/img-story-1.png);
+display: flex;
+font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.text-content {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.smallerstories {
+  flex: 1 0 50%;
+display: inline-flex;
+}
 
 
 
@@ -181,4 +161,34 @@ h2 {
   font-weight: bold;
   font-style: normal;
   font-family: Georgia;
+}
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  }
+
+  .title {
+    font-family: Georgia;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+  }
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  font-family: Verdana;
+  font-size: 12px;
 }
